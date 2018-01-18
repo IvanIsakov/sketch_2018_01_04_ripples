@@ -41,7 +41,9 @@ void draw() {
   for (Interaction I : interactionField) {
     I.update();
   }
-  saveFrame("interaction_sticks_white-####.png");
+  if (keyPressed) {
+    saveFrame("interaction_sticks_white-####.png");
+  }
 }
 
 class Lines {
